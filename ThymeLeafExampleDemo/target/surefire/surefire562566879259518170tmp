@@ -1,0 +1,8 @@
+#surefire
+#Sat Jun 08 19:17:28 ICT 2019
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=D\:\\java\\ThymeLeafExampleDemo
+file.encoding=UTF-8
+localRepository=C\:\\Users\\DELL\\.m2\\repository
+netbeans.deploy=true
+basedir=D\:\\java\\ThymeLeafExampleDemo

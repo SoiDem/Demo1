@@ -1,0 +1,65 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/template/template.html}">
+    <section layout:fragment="custom-content">
+
+
+        <h1>Sum</h1>   
+
+
+        <form th:action="@{/home/sum}"   method="GET"   >
+
+            <!-- 
+              <ul>
+                 <li th:each="err : ${#fields.errors('*')}" th:text="${err}" />
+             </ul>
+            -->
+
+            <table id="tbInfo">
+
+                <tr>
+                    <td>
+                        Số nhất thứ 1
+                    </td>
+                    <td>
+                        <input type="number" id="num1" name="num1" th:value="${num1}" style="width: 180px" /> 
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Số nhất thứ 2
+                    </td>
+                    <td>
+                        <input type="number" id="num2" name="num2" th:value="${num2}" style="width: 180px" /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        TEN
+                    </td>
+                    <td>
+                        <input type="text"  name="ten" th:value="${ten3}" style="width: 180px" /> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Execute1" style="width: 120px;" />
+                    </td>
+                </tr>
+                <tr></tr>
+
+            </table>
+
+            <p style="color: red" th:if="${total}" th:text="| Total : ${total} |"  ></p>
+                <p style="color: red" th:if="${ten}" th:text="| ten : ${ten} |"  ></p>
+
+
+        </form>
+
+        <br/>
+
+
+    </section>
+</html>
